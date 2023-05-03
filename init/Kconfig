@@ -1308,6 +1308,10 @@ config LD_DEAD_CODE_DATA_ELIMINATION
 	  present. This option is not well tested yet, so use at your
 	  own risk.
 
+config GCC_GRAPHITE
+	bool "Enable GCC Polyhedral Loop Optimization (Graphite)"
+	depends on CC_IS_GCC
+	
 config SYSCTL
 	bool
 
